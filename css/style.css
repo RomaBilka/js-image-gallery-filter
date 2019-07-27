@@ -1,0 +1,67 @@
+#grid { 
+	width:100%;
+	position: relative;
+  }
+#grid > div > img {
+  width: 100%;
+ transition: transform 1.1s, filter 1s ease-in-out;
+
+}
+#grid > div{
+	background-color: #000;
+}
+#grid:hover img:not(:hover){
+	-webkit-filter: blur(3px) grayscale(100%);
+	-moz-filter: blur(3px) grayscale(100%);
+	-ms-filter:blur(3px) grayscale(100%);
+	-o-filter:  blur(3px) grayscale(100%);
+	filter: blur(3px) grayscale(100%);
+	opacity: 0.3;	
+
+
+
+
+}
+#grid > div > img:hover{
+	position: absolute;
+	z-index: 5;
+	transform: scale(1.35);
+}
+
+#gallery{
+	padding: 0px 10% 0 10%;
+}
+.gallery{
+	background-color: rgba(0,0,0, 0.97);
+	position: absolute;
+	left:0;
+	z-index: 9999;
+	width: 100%;
+}
+
+.gallery > img{
+	position: absolute;
+	z-index: 10000;
+}
+#gallery_close{
+	color: #aaa;
+	position: relative;
+	z-index: 10001;
+	top:0;
+	border: solid 1px #aaa;
+	padding-left: 4px;
+	padding-top:0px;
+	width: 38px;
+	height: authi;
+	font-size:13px;
+	cursor: pointer;
+}
+.filter_btn{
+	float: left;
+	margin: 5px;
+	padding:5px;
+	border: solid 1px #000;
+}
+#filter{
+	height:50px;
+}

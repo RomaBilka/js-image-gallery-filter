@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Galareya</title>
+<link href="css/style.css" rel="stylesheet">
+<script src="js/galareya.js" type="text/javascript"></script>
+</head>
+<body>
+
+<section id="container">
+			<div id='filter'>
+				<p class='filter_btn' data-filter='Girl'>Girl</p>
+				<p class='filter_btn' data-filter='Moon'>Moon</p>
+				<p class='filter_btn' data-filter='Nature'>Nature</p>
+				<p class='filter_btn' data-filter='Jellyfish'>Jellyfish</p>
+				<p class='filter_btn' data-filter='Glass'>Glass</p>
+				<p class='filter_btn' data-filter='Autumn'>Autumn</p>
+				<p class='filter_btn' data-filter=''>All</p>
+			</div>
+			<div id='gallery'>
+					<div id="grid">
+							<div data-filter="Glass"><img src="img/01_small.jpg" alt="" data-full="img/01.jpg"></div>
+							<div data-filter="Nature"><img src="img/02_small.jpg" alt="" data-full="img/02.jpg"></div>
+							<div data-filter="Nature"><img src="img/03_small.jpg" alt="" data-full="img/03.jpg"></div>
+							<div data-filter="Nature Jellyfish"><img src="img/04_small.jpg" alt="" data-full="img/04.jpg"></div>
+							<div data-filter="Nature Jellyfish"><img src="img/05_small.jpg" alt="" data-full="img/05.jpg"></div>
+							<div data-filter="Nature Jellyfish"><img src="img/06_small.jpg" alt="" data-full="img/06.jpg"></div>
+							<div data-filter="Nature Moon"><img src="img/07_small.jpg" alt="" data-full="img/07.jpg"></div>
+							<div data-filter="Nature Jellyfish"><img src="img/08_small.jpg" alt="" data-full="img/08.jpg"></div>
+							<div data-filter="Nature Jellyfish"><img src="img/09_small.jpg" alt="" data-full="img/09.jpg"></div>
+							<div data-filter="Nature"><img src="img/10_small.jpg" alt="" data-full="img/10.jpg"></div>
+							<div data-filter="Girl"><img src="img/11_small.jpg" alt="" data-full="img/11.jpg"></div>
+							<div data-filter="Girl Autumn"><img src="img/12_small.jpg" alt="" data-full="img/12.jpg"></div>
+							<div data-filter="Girl"><img src="img/13_small.jpg" alt="" data-full="img/13.jpg"></div>
+							<div data-filter="Nature Jellyfish"><img src="img/14_small.jpg" alt="" data-full="img/14.jpg"></div>
+							<div data-filter="Nature"><img src="img/15_small.jpg" alt="" data-full="img/15.jpg"></div>
+							<div data-filter="Nature Moon"><img src="img/16_small.jpg" alt="" data-full="img/16.jpg"></div>
+							<div data-filter="Glass"><img src="img/17_small.jpg" alt="" data-full="img/17.jpg"></div>
+							<div data-filter="Girl Autumn"><img src="img/18_small.jpg" alt="" data-full="img/18.jpg"></div>
+							<div data-filter="Nature Jellyfish"><img src="img/19_small.jpg" alt="" data-full="img/19.jpg"></div>
+							<div data-filter="Glass"><img src="img/20_small.jpg" alt="" data-full="img/20.jpg"></div>
+							<div data-filter="Nature"><img src="img/21_small.jpg" alt="" data-full="img/21.jpg"></div>
+							<div data-filter="Nature Jellyfish"><img src="img/22_small.jpg" alt="" data-full="img/22.jpg"></div>
+							<div data-filter="Girl"><img src="img/23_small.jpg" alt="" data-full="img/23.jpg"></div>
+							<div data-filter="Nature Autumn"><img src="img/24_small.jpg" alt="" data-full="img/24.jpg"></div>
+							<div data-filter="Nature"><img src="img/25_small.jpg" alt="" data-full="img/25.jpg"></div>
+							<div data-filter="Nature Jellyfish"><img src="img/26_small.jpg" alt="" data-full="img/26.jpg"></div>
+							<div data-filter="Nature Autumn"><img src="img/27_small.jpg" alt="" data-full="img/27.jpg"></div>
+							<div data-filter="Nature"><img src="img/28_small.jpg" alt="" data-full="img/28.jpg"></div>
+							<div data-filter="Girl"><img src="img/29_small.jpg" alt="" data-full="img/29.jpg"></div>
+							<div data-filter="Nature Moon"><img src="img/30_small.jpg" alt="" data-full="img/30.jpg"></div>
+							
+					</div>
+				</div>
+				
+
+		</section>
+		<script>
+			const gallery = new Gallery({selector:'#grid', duration:500});
+			const gallery_filter = new Filter({selector:'#grid', column:4, duration:1000 });
+			window.onload = function() {
+				galleryInit();	
+			}
+		</script>
+	</body>
+</html>
