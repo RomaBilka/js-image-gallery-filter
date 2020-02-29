@@ -6,6 +6,18 @@
 </head>
 <body>
 
+<div class="loading" id='loader'>
+	<div class="loading-text">
+		<span class="loading-text-words">L</span>
+		<span class="loading-text-words">O</span>
+		<span class="loading-text-words">A</span>
+		<span class="loading-text-words">D</span>
+		<span class="loading-text-words">I</span>
+		<span class="loading-text-words">N</span>
+		<span class="loading-text-words">G</span>
+	</div>
+</div>
+
 <section id="container">
 			<div id='filter'>
 				<p class='filter_btn' data-filter='Girl'>Girl</p>
@@ -48,16 +60,14 @@
 							<div data-filter="Nature"><img src="img/28_small.jpg" alt="" data-full="img/28.jpg"></div>
 							<div data-filter="Girl"><img src="img/29_small.jpg" alt="" data-full="img/29.jpg"></div>
 							<div data-filter="Nature Moon"><img src="img/30_small.jpg" alt="" data-full="img/30.jpg"></div>
-							
 					</div>
 				</div>
-				
-
 		</section>
 		<script>
 			const gallery = new Gallery({selector:'#grid', duration:500});
 			const gallery_filter = new Filter({selector:'#grid', column:4, duration:1000 });
 			window.onload = function() {
+				document.getElementById('loader').hidden = true;
 				galleryInit();	
 			}
 		</script>
